@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liam Courtot, server assistant and food runner</title>
+<meta name="description" content="Rehired by Park Hyatt Beaver Creek for 2026-27. Available for 2 to 3 part-time shifts a week in the Vail Valley, through Easter.">
+<meta name="theme-color" content="#F2EEE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#172118" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/dm-sans-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:title" content="Liam Courtot, server assistant and food runner">
+<meta property="og:description" content="Rehired by Park Hyatt Beaver Creek for 2026-27. Available for 2 to 3 part-time shifts a week in the Vail Valley, through Easter.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://liamcourtot.github.io/work/">
+<meta property="og:url" content="https://liamcourtot.github.io/work/">
+<meta property="og:image" content="https://liamcourtot.github.io/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  .hero { display: grid; gap: 36px; padding-block: 28px 56px; }
+  .hero-copy { display: grid; gap: 20px; align-content: start; }
+  .greet { font-family: var(--mono); font-size: 15px; font-weight: 500; letter-spacing: .01em; color: var(--accent); }
+  .hero h1 { font-size: clamp(38px, 6vw, 60px); letter-spacing: -.035em; max-width: 13ch; }
+  .lede { font-size: 19px; color: var(--ink-soft); max-width: 42ch; }
+  .hero-visual { position: relative; display: grid; justify-items: start; }
+  .portrait { width: min(240px, 64vw); aspect-ratio: 418 / 504; height: auto; object-fit: cover; border-radius: var(--r); box-shadow: var(--shadow); background: var(--paper-2); }
+
+  /* the season pass: availability set like a lift ticket */
+  .pass {
+    position: relative; width: calc(100% - 28px); max-width: 360px; margin-top: -40px; margin-left: 28px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow);
+    padding: 16px 18px 16px 26px;
+    -webkit-mask: radial-gradient(circle 7px at 0 50%, transparent 98%, #000) ;
+            mask: radial-gradient(circle 7px at 0 50%, transparent 98%, #000);
+  }
+  .pass-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dashed var(--line); }
+  .pass-head b { font-weight: 600; font-size: 16px; color: var(--accent); }
+  .pass-head span { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+  .pass dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 16px; font-size: 15.5px; }
+  .pass dt { color: var(--muted); }
+  .pass dd { margin: 0; font-weight: 500; }
+  .pass-foot { margin-top: 12px; font-size: 14px; color: var(--muted); }
+
+  section.block { padding-block: 56px; border-top: 1px solid var(--line); display: grid; gap: 28px; }
+  section.block h2 { font-size: clamp(28px, 4.4vw, 40px); }
+
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; margin: 0; }
+  .stats div { display: grid; gap: 6px; align-content: start; }
+  .stats dt { order: 2; font-size: 15.5px; color: var(--ink-soft); max-width: 24ch; }
+  .stats dd { order: 1; margin: 0; font-size: clamp(48px, 8vw, 72px); font-weight: 600; letter-spacing: -.04em; line-height: .95; font-variant-numeric: tabular-nums; }
+  .stats dd small { font-size: .42em; letter-spacing: -.01em; margin-left: 4px; font-weight: 500; }
+
+  .jobs { display: grid; gap: 30px; }
+  .job { display: grid; gap: 8px; }
+  .job-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; align-items: baseline; }
+  .job h3 { font-size: 22px; letter-spacing: -.02em; }
+  .job .when { font-family: var(--mono); font-size: 14px; color: var(--muted); }
+  .job .what { color: var(--ink-soft); }
+  .job ul { margin: 4px 0 0; padding-left: 1.1em; display: grid; gap: 4px; color: var(--ink-soft); max-width: 62ch; }
+  .tag { display: inline-block; font-size: 13.5px; font-weight: 600; color: var(--accent); }
+
+  video.intro { width: min(420px, 100%); aspect-ratio: 9 / 16; border-radius: var(--r); background: var(--paper-2); box-shadow: var(--shadow); }
+  .refs { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .refs li { display: grid; gap: 2px; }
+  .refs b { font-weight: 600; }
+  .refs span { color: var(--ink-soft); }
+
+  .contact { background: var(--paper-2); border-radius: var(--r); padding: 28px 22px; display: grid; gap: 18px; margin-block: 24px 0; }
+  .contact h2 { font-size: clamp(30px, 5vw, 44px); }
+  .contact p { color: var(--ink-soft); max-width: 46ch; }
+  .mailline { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 15.5px; color: var(--muted); }
+  .linkbtn { font: inherit; font-size: 15px; font-weight: 600; color: var(--ink); background: none; border: 0; padding: 10px 0; min-height: 44px; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+
+  @media (min-width: 860px) {
+    .hero { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 48px; padding-block: 64px 80px; align-items: center; }
+    .hero-visual { justify-items: end; }
+    .portrait { width: 300px; }
+    .pass { margin-top: -64px; }
+    .pass { margin-left: 0; margin-right: 120px; }
+    .stats { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+    .split2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+    .contact { grid-template-columns: minmax(0, 1fr) auto; align-items: end; padding: 40px; }
+  }
+</style>
+</head>
+<body data-page="work">
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="ic-wa" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+<symbol id="ic-mail" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+<symbol id="ic-phone" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="ic-li" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></symbol>
+<symbol id="ic-ig" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="ic-user" viewBox="0 0 256 256"><path d="M256,136a8,8,0,0,1-8,8H232v16a8,8,0,0,1-16,0V144H200a8,8,0,0,1,0-16h16V112a8,8,0,0,1,16,0v16h16A8,8,0,0,1,256,136Zm-57.87,58.85a8,8,0,0,1-12.26,10.3C165.75,181.19,138.09,168,108,168s-57.75,13.19-77.87,37.15a8,8,0,0,1-12.25-10.3c14.94-17.78,33.52-30.41,54.17-37.17a68,68,0,1,1,71.9,0C164.6,164.44,183.18,177.07,198.13,194.85ZM108,152a52,52,0,1,0-52-52A52.06,52.06,0,0,0,108,152Z"/></symbol>
+<symbol id="ic-dl" viewBox="0 0 256 256"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z"/></symbol>
+<symbol id="ic-up" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+<symbol id="ic-arrow" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+<symbol id="ic-chat" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V224a15.85,15.85,0,0,0,9.24,14.5A16.13,16.13,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216ZM88,112a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H96A8,8,0,0,1,88,112Zm0,32a8,8,0,0,1,8-8h64a8,8,0,1,1,0,16H96A8,8,0,0,1,88,144Z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap"><a class="wordmark" href="../">Liam Courtot</a></div></header>
+
+<main id="main">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <p class="greet rise" id="greet" hidden>For the <span id="greet-place"></span> team</p>
+      <h1>Server assistant and food runner.</h1>
+      <p class="lede rise" style="--i:2">Rehired by Park Hyatt Beaver Creek for a second winter. Available for 2 to 3 part-time shifts a week, through Easter.</p>
+      <div class="btns rise" style="--i:3">
+        <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg>Message me</a>
+        <a class="btn" href="../resume/Liam-Courtot-Resume.pdf" download><svg class="icon" aria-hidden="true"><use href="#ic-dl"/></svg>Resume (PDF)</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img class="portrait" src="../assets/liam-portrait.jpg" width="418" height="504" alt="Liam Courtot" fetchpriority="high" decoding="async">
+      <aside class="pass rise" style="--i:3" aria-label="Availability this winter">
+        <div class="pass-head"><b>Winter 2026-27</b><span>J-1 · CCUSA</span></div>
+        <dl>
+          <dt>Shifts</dt><dd>2 to 3 a week, part-time</dd>
+          <dt>When</dt><dd>Evenings and days off</dd>
+          <dt>From</dt><dd class="mono">Mid-December 2026</dd>
+          <dt>Through</dt><dd class="mono">March 28, 2027</dd>
+        </dl>
+        <p class="pass-foot">My sponsor approves the job before my first shift. I handle the paperwork.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-numbers">
+    <h2 id="h-numbers">Last season, in numbers</h2>
+    <dl class="stats">
+      <div><dt>hours a week, on average, through peak season</dt><dd>50<small>h</small></dd></div>
+      <div><dt>overtime hours from January to March 2026</dt><dd>123</dd></div>
+      <div><dt>roles cross-trained, from host to in-room dining</dt><dd>5</dd></div>
+      <div><dt>languages: Spanish with the kitchen, English on the floor</dt><dd>2</dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-exp">
+    <h2 id="h-exp">Experience</h2>
+    <div class="jobs split2">
+      <article class="job">
+        <div class="job-top"><h3>Park Hyatt Beaver Creek</h3><span class="when">Dec 2025 - Mar 2026</span></div>
+        <p class="what">Food and beverage, AAA Four-Diamond ski-in/ski-out resort. <span class="tag">Rehired for 2026-27</span></p>
+        <ul>
+          <li>Ran food and reset tables through the holiday peak.</li>
+          <li>Handled in-room dining end to end: POS, kitchen timing, delivery and check closing.</li>
+          <li>Hosted the dining room and worked the café line in the morning rush.</li>
+        </ul>
+      </article>
+      <div class="jobs">
+        <article class="job">
+          <div class="job-top"><h3>Qubo Congelados</h3><span class="when">Apr - Nov 2026</span></div>
+          <p class="what">Marketing and systems for our family frozen-food business in Bahía Blanca, Argentina, between ski seasons.</p>
+        </article>
+        <article class="job">
+          <div class="job-top"><h3>Universidad Nacional del Sur</h3><span class="when">2022 - present</span></div>
+          <p class="what">Computer Engineering, 5-year degree, in progress.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" data-if="videoWork" hidden aria-labelledby="h-video">
+    <h2 id="h-video">Hi, I'm Liam</h2>
+    <video class="intro" id="intro-video" controls playsinline preload="metadata"></video>
+  </section>
+
+  <section class="wrap block" data-if="references" hidden aria-labelledby="h-refs">
+    <h2 id="h-refs">References</h2>
+    <ul class="refs" id="refs-list"></ul>
+  </section>
+
+  <section class="wrap">
+    <div class="contact">
+      <div style="display:grid;gap:12px">
+        <h2>Need a hand this season?</h2>
+        <p>This winter I live in Avon and ride the free valley bus, so I can come in on short notice.</p>
+        <p class="mailline"><span data-email data-email-text></span><button class="linkbtn" type="button" data-copy-email>Copy email</button></p>
+      </div>
+      <div class="btns">
+        <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg>Message me</a>
+        <a class="btn" href="../liam-courtot.vcf" download="Liam Courtot.vcf"><svg class="icon" aria-hidden="true"><use href="#ic-user"/></svg>Save contact</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <span>Liam Courtot, Avon, Colorado, winter 2026-27</span>
+  <span>Also a designer and developer: <a href="../studio/">The Obhivion Studio</a></span>
+</div></footer>
+
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://liamcourtot.github.io/sitemap.xml

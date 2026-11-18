@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Obhivion Studio</title>
+<meta name="description" content="Marcas, webs y sistemas para negocios chicos. El estudio de Liam Courtot en Bahía Blanca. Proyectos desde abril de 2027.">
+<meta name="theme-color" content="#F2EEE6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#172118" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/dm-sans-400-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+<meta property="og:title" content="The Obhivion Studio">
+<meta property="og:description" content="Marcas, webs y sistemas para negocios chicos. El estudio de Liam Courtot en Bahía Blanca. Proyectos desde abril de 2027.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://liamcourtot.github.io/studio/">
+<meta property="og:url" content="https://liamcourtot.github.io/studio/">
+<meta property="og:image" content="https://liamcourtot.github.io/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var s;try{s=localStorage.getItem('lang')}catch(e){}document.documentElement.lang=s||((navigator.language||'').toLowerCase().indexOf('es')===0?'es':'en')})();</script>
+<style>
+  .hero { display: grid; gap: 40px; padding-block: 28px 64px; }
+  .hero-copy { display: grid; gap: 20px; align-content: start; }
+  .hero h1 { font-size: clamp(38px, 6vw, 60px); letter-spacing: -.04em; max-width: 14ch; }
+  .lede { font-size: 19px; color: var(--ink-soft); max-width: 40ch; }
+  .shot { position: relative; }
+  .shot .desk { width: 100%; aspect-ratio: 1280 / 800; height: auto; object-fit: cover; border-radius: var(--r); box-shadow: var(--shadow); border: 1px solid var(--line); background: var(--paper-2); }
+  .shot figcaption { margin-top: 12px; font-size: 14.5px; color: var(--muted); }
+
+  section.block { padding-block: 64px; border-top: 1px solid var(--line); display: grid; gap: 32px; }
+  section.block h2 { font-size: clamp(30px, 4.6vw, 44px); }
+  .intro { color: var(--ink-soft); font-size: 18px; max-width: 52ch; }
+
+  .case { display: grid; gap: 28px; }
+  .phone { width: min(280px, 70vw); aspect-ratio: 390 / 844; height: auto; object-fit: cover; object-position: top; border-radius: 26px; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--paper-2); }
+  .built { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+  .built li { padding: 16px 0; border-bottom: 1px solid var(--line); display: grid; gap: 2px; }
+  .built b { font-weight: 600; font-size: 18px; letter-spacing: -.01em; }
+  .built span { color: var(--muted); font-size: 15.5px; }
+  .visit { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; text-underline-offset: 5px; }
+
+  .services { display: grid; gap: 0; margin: 0; }
+  .services div { display: grid; gap: 4px 32px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .services dt { font-size: clamp(24px, 3.6vw, 34px); font-weight: 600; letter-spacing: -.03em; line-height: 1.1; }
+  .services dd { margin: 0; color: var(--ink-soft); max-width: 46ch; align-self: center; }
+
+  .contact { background: var(--paper-2); border-radius: var(--r); padding: 28px 22px; display: grid; gap: 18px; margin-top: 24px; }
+  .contact h2 { font-size: clamp(30px, 5vw, 44px); }
+  .contact p { color: var(--ink-soft); max-width: 44ch; }
+  .mailline { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 15.5px; color: var(--muted); }
+  .linkbtn { font: inherit; font-size: 15px; font-weight: 600; color: var(--ink); background: none; border: 0; padding: 10px 0; min-height: 44px; cursor: pointer; text-decoration: underline; text-underline-offset: 4px; }
+
+  @media (min-width: 900px) {
+    .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; padding-block: 64px 88px; align-items: center; }
+    .case { grid-template-columns: auto minmax(0, 1fr); gap: 56px; align-items: center; }
+    .services div { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); }
+    .contact { grid-template-columns: minmax(0, 1fr) auto; align-items: end; padding: 40px; }
+  }
+</style>
+</head>
+<body data-page="studio" data-title-es="The Obhivion Studio" data-title-en="The Obhivion Studio">
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="ic-wa" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+<symbol id="ic-mail" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+<symbol id="ic-phone" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="ic-li" viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></symbol>
+<symbol id="ic-ig" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+<symbol id="ic-user" viewBox="0 0 256 256"><path d="M256,136a8,8,0,0,1-8,8H232v16a8,8,0,0,1-16,0V144H200a8,8,0,0,1,0-16h16V112a8,8,0,0,1,16,0v16h16A8,8,0,0,1,256,136Zm-57.87,58.85a8,8,0,0,1-12.26,10.3C165.75,181.19,138.09,168,108,168s-57.75,13.19-77.87,37.15a8,8,0,0,1-12.25-10.3c14.94-17.78,33.52-30.41,54.17-37.17a68,68,0,1,1,71.9,0C164.6,164.44,183.18,177.07,198.13,194.85ZM108,152a52,52,0,1,0-52-52A52.06,52.06,0,0,0,108,152Z"/></symbol>
+<symbol id="ic-dl" viewBox="0 0 256 256"><path d="M224,144v64a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V144a8,8,0,0,1,16,0v56H208V144a8,8,0,0,1,16,0Zm-101.66,5.66a8,8,0,0,0,11.32,0l40-40a8,8,0,0,0-11.32-11.32L136,124.69V32a8,8,0,0,0-16,0v92.69L93.66,98.34a8,8,0,0,0-11.32,11.32Z"/></symbol>
+<symbol id="ic-up" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+<symbol id="ic-arrow" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+<symbol id="ic-chat" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V224a15.85,15.85,0,0,0,9.24,14.5A16.13,16.13,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216ZM88,112a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H96A8,8,0,0,1,88,112Zm0,32a8,8,0,0,1,8-8h64a8,8,0,1,1,0,16H96A8,8,0,0,1,88,144Z"/></symbol>
+</svg>
+
+<a class="skip" href="#main"><span data-l="es">Ir al contenido</span><span data-l="en">Skip to content</span></a>
+<header class="bar"><div class="wrap"><a class="wordmark" href="./">The Obhivion Studio</a><button id="lang" class="lang" type="button">English</button></div></header>
+
+<main id="main">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <h1 class="rise" style="--i:0"><span data-l="es">Marcas, webs y sistemas para negocios chicos.</span><span data-l="en">Brands, websites and systems for small businesses.</span></h1>
+      <p class="lede rise" style="--i:1"><span data-l="es">El estudio de Liam Courtot en Bahía Blanca. Diseño, código y 3D juntos. Tomo proyectos desde abril de 2027.</span><span data-l="en">Liam Courtot's studio in Bahía Blanca, Argentina. Design, code and 3D together. Booking projects from April 2027.</span></p>
+      <div class="btns rise" style="--i:2">
+        <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg><span data-l="es">Escribime</span><span data-l="en">Get in touch</span></a>
+        <a class="btn" href="#qubo"><span data-l="es">Ver el caso Qubo</span><span data-l="en">See the Qubo case</span></a>
+      </div>
+    </div>
+    <figure class="shot rise" style="--i:1;margin:0">
+      <img class="desk" src="../assets/qubo-desktop.jpg" width="1280" height="800" alt="Página de inicio de qubocongelados.ar" fetchpriority="high">
+      <figcaption><span data-l="es">qubocongelados.ar, la tienda online de Qubo Congelados.</span><span data-l="en">qubocongelados.ar, the online store for Qubo Congelados.</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="wrap block" id="qubo" aria-labelledby="h-qubo">
+    <div style="display:grid;gap:12px">
+      <h2 id="h-qubo">Qubo Congelados</h2>
+      <p class="intro"><span data-l="es">Frutas y verduras congeladas en Bahía Blanca. Les armé el sistema completo para vender: de la tienda al pedido por WhatsApp.</span><span data-l="en">Frozen fruit and vegetables in Bahía Blanca. I built their whole sales system, from the online store to the WhatsApp order.</span></p>
+    </div>
+    <div class="case">
+      <img class="phone" src="../assets/qubo-mobile.jpg" width="390" height="844" loading="lazy" alt="qubocongelados.ar en el celular">
+      <div style="display:grid;gap:22px">
+        <ul class="built">
+          <li><b data-l="es">Tienda online</b><b data-l="en">Online store</b><span data-l="es">Catálogo, combos, carrito y envíos en la ciudad.</span><span data-l="en">Catalogue, bundles, cart and local delivery.</span></li>
+          <li><b data-l="es">Panel de administración</b><b data-l="en">Admin panel</b><span data-l="es">Stock, pedidos, clientes y caja en un solo lugar.</span><span data-l="en">Stock, orders, customers and cash in one place.</span></li>
+          <li><b data-l="es">Pedidos por WhatsApp</b><b data-l="en">WhatsApp orders</b><span data-l="es">Cada pedido llega ordenado al chat del negocio.</span><span data-l="en">Every order lands, organised, in the business chat.</span></li>
+          <li><b data-l="es">Redes y anuncios</b><b data-l="en">Social and ads</b><span data-l="es">Campañas de Meta y guiones para reels.</span><span data-l="en">Meta campaigns and scripts for reels.</span></li>
+        </ul>
+        <a class="visit" href="https://www.qubocongelados.ar/" target="_blank" rel="noopener"><span data-l="es">Visitar qubocongelados.ar</span><span data-l="en">Visit qubocongelados.ar</span><svg class="icon" aria-hidden="true"><use href="#ic-up"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="h-what">
+    <h2 id="h-what"><span data-l="es">Qué hago</span><span data-l="en">What I do</span></h2>
+    <dl class="services">
+      <div><dt><span data-l="es">Identidad de marca</span><span data-l="en">Brand identity</span></dt><dd><span data-l="es">Logo, color, letra y las piezas para usarla todos los días.</span><span data-l="en">Logo, colour, type and the pieces to use them every day.</span></dd></div>
+      <div><dt><span data-l="es">Webs y paneles</span><span data-l="en">Websites and panels</span></dt><dd><span data-l="es">Sitios, tiendas y paneles a medida, publicados y funcionando.</span><span data-l="en">Sites, stores and custom admin panels, live and working.</span></dd></div>
+      <div><dt><span data-l="es">3D y video</span><span data-l="en">3D and video</span></dt><dd><span data-l="es">Producto en 3D, animación y contenido para redes.</span><span data-l="en">Product 3D, animation and content for social.</span></dd></div>
+      <div><dt><span data-l="es">Automatización</span><span data-l="en">Automation</span></dt><dd><span data-l="es">WhatsApp, agentes de IA y las tareas repetidas que se pueden sacar de encima.</span><span data-l="en">WhatsApp, AI agents and the repetitive tasks you can take off your plate.</span></dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap">
+    <div class="contact">
+      <div style="display:grid;gap:12px">
+        <h2><span data-l="es">¿Tenés un proyecto para abril?</span><span data-l="en">Got a project for April?</span></h2>
+        <p><span data-l="es">Contame qué necesitás y te escribo apenas vuelva a Bahía Blanca.</span><span data-l="en">Tell me what you need and I'll write back as soon as I'm home in Bahía Blanca.</span></p>
+        <p class="mailline"><span data-email data-email-text></span><button class="linkbtn" type="button" data-copy-email><span data-l="es">Copiar mail</span><span data-l="en">Copy email</span></button></p>
+      </div>
+      <div class="btns">
+        <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg><span data-l="es">Escribime</span><span data-l="en">Get in touch</span></a>
+        <a class="btn" data-if="instagramStudio" href="#" hidden><svg class="icon" aria-hidden="true"><use href="#ic-ig"/></svg><span data-handle></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <span>The Obhivion Studio, Bahía Blanca</span>
+  <span><span data-l="es">Hecho por</span><span data-l="en">Made by</span> <a href="../">Liam Courtot</a></span>
+</div></footer>
+
+<script src="../assets/config.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
