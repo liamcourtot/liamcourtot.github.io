@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Obhivion Studio</title>
-<meta name="description" content="Marcas, webs y sistemas para negocios chicos. El estudio de Liam Courtot en Bahía Blanca. Proyectos desde abril de 2027.">
+<meta name="description" content="Estudio de diseño orientado al marketing en Bahía Blanca: webs, marca, sistemas y soluciones para restaurantes. Proyectos desde abril de 2027.">
 <meta name="theme-color" content="#F2EEE6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#172118" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/site.css">
 <meta property="og:title" content="The Obhivion Studio">
-<meta property="og:description" content="Marcas, webs y sistemas para negocios chicos. El estudio de Liam Courtot en Bahía Blanca. Proyectos desde abril de 2027.">
+<meta property="og:description" content="Estudio de diseño orientado al marketing en Bahía Blanca: webs, marca, sistemas y soluciones para restaurantes. Proyectos desde abril de 2027.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://liamcourtot.github.io/studio/">
 <meta property="og:url" content="https://liamcourtot.github.io/studio/">
@@ -40,10 +40,13 @@
   .built span { color: var(--muted); font-size: 15.5px; }
   .visit { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; text-underline-offset: 5px; }
 
+  .groups { display: grid; gap: 40px; }
+  .group { display: grid; gap: 14px; align-content: start; }
+  .group h3 { font-size: 15px; font-family: var(--mono); font-weight: 500; letter-spacing: .04em; color: var(--accent); }
   .services { display: grid; gap: 0; margin: 0; }
-  .services div { display: grid; gap: 4px 32px; padding: 22px 0; border-top: 1px solid var(--line); }
-  .services dt { font-size: clamp(24px, 3.6vw, 34px); font-weight: 600; letter-spacing: -.03em; line-height: 1.1; }
-  .services dd { margin: 0; color: var(--ink-soft); max-width: 46ch; align-self: center; }
+  .services div { display: grid; gap: 4px; padding: 18px 0; border-top: 1px solid var(--line); }
+  .services dt { font-size: clamp(21px, 2.6vw, 26px); font-weight: 600; letter-spacing: -.025em; line-height: 1.15; }
+  .services dd { margin: 0; color: var(--ink-soft); max-width: 46ch; }
 
   .contact { background: var(--paper-2); border-radius: var(--r); padding: 28px 22px; display: grid; gap: 18px; margin-top: 24px; }
   .contact h2 { font-size: clamp(30px, 5vw, 44px); }
@@ -54,7 +57,7 @@
   @media (min-width: 900px) {
     .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; padding-block: 64px 88px; align-items: center; }
     .case { grid-template-columns: auto minmax(0, 1fr); gap: 56px; align-items: center; }
-    .services div { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); }
+    .groups { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; }
     .contact { grid-template-columns: minmax(0, 1fr) auto; align-items: end; padding: 40px; }
   }
 </style>
@@ -79,8 +82,8 @@
 <main id="main">
   <section class="wrap hero">
     <div class="hero-copy">
-      <h1 class="rise" style="--i:0"><span data-l="es">Marcas, webs y sistemas para negocios chicos.</span><span data-l="en">Brands, websites and systems for small businesses.</span></h1>
-      <p class="lede rise" style="--i:1"><span data-l="es">El estudio de Liam Courtot en Bahía Blanca. Diseño, código y 3D juntos. Tomo proyectos desde abril de 2027.</span><span data-l="en">Liam Courtot's studio in Bahía Blanca, Argentina. Design, code and 3D together. Booking projects from April 2027.</span></p>
+      <h1 class="rise" style="--i:0"><span data-l="es">Diseño y marketing para negocios que quieren vender más.</span><span data-l="en">Design and marketing for businesses that want to sell more.</span></h1>
+      <p class="lede rise" style="--i:1"><span data-l="es">The Obhivion Studio es un estudio de diseño orientado al marketing, en Bahía Blanca. Tomo proyectos desde abril de 2027.</span><span data-l="en">The Obhivion Studio is a marketing-minded design studio in Bahía Blanca, Argentina. Booking projects from April 2027.</span></p>
       <div class="btns rise" style="--i:2">
         <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg><span data-l="es">Escribime</span><span data-l="en">Get in touch</span></a>
         <a class="btn" href="#qubo"><span data-l="es">Ver el caso Qubo</span><span data-l="en">See the Qubo case</span></a>
@@ -112,13 +115,29 @@
   </section>
 
   <section class="wrap block" aria-labelledby="h-what">
-    <h2 id="h-what"><span data-l="es">Qué hago</span><span data-l="en">What I do</span></h2>
-    <dl class="services">
-      <div><dt><span data-l="es">Identidad de marca</span><span data-l="en">Brand identity</span></dt><dd><span data-l="es">Logo, color, letra y las piezas para usarla todos los días.</span><span data-l="en">Logo, colour, type and the pieces to use them every day.</span></dd></div>
-      <div><dt><span data-l="es">Webs y paneles</span><span data-l="en">Websites and panels</span></dt><dd><span data-l="es">Sitios, tiendas y paneles a medida, publicados y funcionando.</span><span data-l="en">Sites, stores and custom admin panels, live and working.</span></dd></div>
-      <div><dt><span data-l="es">3D y video</span><span data-l="en">3D and video</span></dt><dd><span data-l="es">Producto en 3D, animación y contenido para redes.</span><span data-l="en">Product 3D, animation and content for social.</span></dd></div>
-      <div><dt><span data-l="es">Automatización</span><span data-l="en">Automation</span></dt><dd><span data-l="es">WhatsApp, agentes de IA y las tareas repetidas que se pueden sacar de encima.</span><span data-l="en">WhatsApp, AI agents and the repetitive tasks you can take off your plate.</span></dd></div>
-    </dl>
+    <h2 id="h-what"><span data-l="es">Soluciones</span><span data-l="en">Solutions</span></h2>
+    <div class="groups">
+      <div class="group">
+        <h3><span data-l="es">Para cualquier negocio</span><span data-l="en">For any business</span></h3>
+        <dl class="services">
+          <div><dt><span data-l="es">Web Esencial</span><span data-l="en">Essential website</span></dt><dd><span data-l="es">Que existas y te encuentren.</span><span data-l="en">So you exist online and people find you.</span></dd></div>
+          <div><dt><span data-l="es">Web Profesional</span><span data-l="en">Professional website</span></dt><dd><span data-l="es">Que la manejes vos, sin depender de nadie.</span><span data-l="en">So you run it yourself, without depending on anyone.</span></dd></div>
+          <div><dt><span data-l="es">Web Completa</span><span data-l="en">Complete website</span></dt><dd><span data-l="es">Que te sigan encontrando, y que los textos los escriba yo.</span><span data-l="en">So people keep finding you, and I write the copy.</span></dd></div>
+          <div><dt><span data-l="es">Identidad de marca</span><span data-l="en">Brand identity</span></dt><dd><span data-l="es">Que se note que atrás hay alguien que sabe lo que hace.</span><span data-l="en">So it shows there is someone behind it who knows the job.</span></dd></div>
+          <div><dt><span data-l="es">Sistema a medida</span><span data-l="en">Custom system</span></dt><dd><span data-l="es">Que dejes de manejar el negocio entre planillas y WhatsApp.</span><span data-l="en">So you stop running the business on spreadsheets and WhatsApp.</span></dd></div>
+          <div><dt><span data-l="es">Tienda online</span><span data-l="en">Online store</span></dt><dd><span data-l="es">Catálogo, carrito y pedidos, como la de Qubo.</span><span data-l="en">Catalogue, cart and orders, like Qubo's.</span></dd></div>
+        </dl>
+      </div>
+      <div class="group">
+        <h3><span data-l="es">Para restaurantes, cafés y locales</span><span data-l="en">For restaurants, cafés and shops</span></h3>
+        <dl class="services">
+          <div><dt><span data-l="es">Tarjeta NFC en mostrador y mesas</span><span data-l="en">NFC cards on counters and tables</span></dt><dd><span data-l="es">Que el cliente apoye el teléfono y te deje la reseña en Google, te siga en Instagram o te pague.</span><span data-l="en">Customers tap their phone to leave a Google review, follow you or pay.</span></dd></div>
+          <div><dt><span data-l="es">Puesta a punto en Google Maps</span><span data-l="en">Google Maps tune-up</span></dt><dd><span data-l="es">Que aparezcas en el mapa cuando te buscan.</span><span data-l="en">So you show up on the map when people search.</span></dd></div>
+          <div><dt><span data-l="es">Web con la carta</span><span data-l="en">Website with your menu</span></dt><dd><span data-l="es">La carta, los horarios y cómo llegar, siempre al día.</span><span data-l="en">Your menu, hours and directions, always up to date.</span></dd></div>
+          <div><dt><span data-l="es">Contenido y SEO todos los meses</span><span data-l="en">Monthly content and SEO</span></dt><dd><span data-l="es">Que no tengas que pensar si vale la pena pedirme algo, y que lo ganado no se quede quieto.</span><span data-l="en">So you never wonder whether to ask, and what you gained keeps growing.</span></dd></div>
+        </dl>
+      </div>
+    </div>
   </section>
 
   <section class="wrap">

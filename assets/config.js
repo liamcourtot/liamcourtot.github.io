@@ -26,6 +26,10 @@ window.LIAM = {
   // Nombre lindo para el saludo del QR, si el automático sale raro. Ej.: { 'yeti-s': "Yeti's" }
   places: {},
 
+  // Cuando exista la web de The Obhivion Studio, poné acá su dirección completa.
+  // Todos los enlaces al estudio van a ir ahí, y /studio/ redirige solo.
+  obhivionUrl: '',
+
   // Estadísticas sin cookies (GoatCounter, gratis). Poné tu código, ej.: 'liamcourtot'
   goatcounter: ''
 };

@@ -117,6 +117,12 @@
     });
   }
 
+  /* studio links: the Obhivion website when it exists, /studio/ until then */
+  if (C.obhivionUrl) {
+    if (page === 'studio') { location.replace(C.obhivionUrl); return; }
+    $$('[data-studio]').forEach(function (a) { a.href = C.obhivionUrl; });
+  }
+
   paintLang();
 
   /* cookieless page counts (optional) */

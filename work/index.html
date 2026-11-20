@@ -67,6 +67,27 @@
   .refs b { font-weight: 600; }
   .refs span { color: var(--ink-soft); }
 
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font: inherit; font-size: 15.5px; font-weight: 500; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--ghost); color: var(--ink); cursor: pointer; transition: transform .18s cubic-bezier(.16, 1, .3, 1), background-color .18s; }
+  .chip:hover { border-color: var(--ink); }
+  .chip:active { transform: scale(.97); }
+  .chip[aria-checked="true"] { background: var(--cta); color: var(--cta-ink); border-color: var(--cta); }
+  .role-card { display: grid; gap: 16px; max-width: 68ch; }
+  .role-sum { font-size: 18px; color: var(--ink-soft); }
+  .role-hl { margin: 0; padding-left: 1.1em; display: grid; gap: 6px; }
+  .role-skills { font-size: 15.5px; color: var(--muted); }
+  .role-skills b { color: var(--ink); font-weight: 600; margin-right: 6px; }
+  .resume { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); padding: 24px 22px; display: grid; gap: 12px; max-width: 760px; scroll-margin-top: 16px; }
+  .resume h3 { font-size: 28px; }
+  .resume h4 { font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 12px 0 0; }
+  .resume .r-sub, .resume .r-meta, .resume .r-title { color: var(--muted); font-size: 15.5px; }
+  .resume .r-title { color: var(--ink-soft); font-style: italic; }
+  .resume .r-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; align-items: baseline; }
+  .resume .r-top span { font-size: 14px; color: var(--muted); }
+  .resume .r-job { display: grid; gap: 4px; }
+  .resume ul { margin: 4px 0 0; padding-left: 1.1em; display: grid; gap: 4px; color: var(--ink-soft); }
+  .resume .r-skills { columns: 2 220px; display: block; }
+  .resume .r-dl { margin-top: 8px; }
   .contact { background: var(--paper-2); border-radius: var(--r); padding: 28px 22px; display: grid; gap: 18px; margin-block: 24px 0; }
   .contact h2 { font-size: clamp(30px, 5vw, 44px); }
   .contact p { color: var(--ink-soft); max-width: 46ch; }
@@ -106,11 +127,11 @@
   <section class="wrap hero">
     <div class="hero-copy">
       <p class="greet rise" id="greet" hidden>For the <span id="greet-place"></span> team</p>
-      <h1>Server assistant and food runner.</h1>
+      <h1 id="hero-h1">Server assistant and food runner.</h1>
       <p class="lede rise" style="--i:2">Rehired by Park Hyatt Beaver Creek for a second winter. Available for 2 to 3 part-time shifts a week, through Easter.</p>
       <div class="btns rise" style="--i:3">
         <a class="btn primary" data-msg href="#"><svg class="icon" aria-hidden="true"><use href="#ic-chat"/></svg>Message me</a>
-        <a class="btn" href="../resume/Liam-Courtot-Resume.pdf" download><svg class="icon" aria-hidden="true"><use href="#ic-dl"/></svg>Resume (PDF)</a>
+        <a class="btn" id="hero-pdf" href="../resume/Liam-Courtot-Resume.pdf" download><svg class="icon" aria-hidden="true"><use href="#ic-dl"/></svg>Resume (PDF)</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -126,6 +147,18 @@
         <p class="pass-foot">My sponsor approves the job before my first shift. I handle the paperwork.</p>
       </aside>
     </div>
+  </section>
+
+  <section class="wrap block" id="roles" aria-labelledby="h-roles">
+    <h2 id="h-roles">What are you hiring for?</h2>
+    <div class="chips" id="role-chips" role="radiogroup" aria-labelledby="h-roles"></div>
+    <div class="role-card" aria-live="polite">
+      <p class="role-sum" id="role-sum"></p>
+      <ul class="role-hl" id="role-hl"></ul>
+      <p class="role-skills"><b>Skills</b> <span id="role-skills"></span></p>
+      <div class="btns"><button class="btn primary" type="button" id="role-view" aria-expanded="false" aria-controls="resume">View full resume</button></div>
+    </div>
+    <article class="resume" id="resume" hidden aria-label="Full resume"></article>
   </section>
 
   <section class="wrap block" aria-labelledby="h-numbers">
@@ -153,7 +186,7 @@
       <div class="jobs">
         <article class="job">
           <div class="job-top"><h3>Qubo Congelados</h3><span class="when">Apr - Nov 2026</span></div>
-          <p class="what">Marketing and systems for our family frozen-food business in Bahía Blanca, Argentina, between ski seasons.</p>
+          <p class="what">Operations and systems for our family frozen-food business in Bahía Blanca, Argentina — running daily orders and inventory on custom order and POS software I built.</p>
         </article>
         <article class="job">
           <div class="job-top"><h3>Universidad Nacional del Sur</h3><span class="when">2022 - present</span></div>
@@ -190,10 +223,12 @@
 
 <footer class="foot"><div class="wrap">
   <span>Liam Courtot, Avon, Colorado, winter 2026-27</span>
-  <span>Also a designer and developer: <a href="../studio/">The Obhivion Studio</a></span>
+  <span>Also a designer and developer: <a href="../studio/" data-studio>The Obhivion Studio</a></span>
 </div></footer>
 
 <script src="../assets/config.js"></script>
 <script src="../assets/site.js"></script>
+<script src="../assets/roles.js"></script>
+<script src="../assets/work.js"></script>
 </body>
 </html>
